@@ -26,3 +26,13 @@
   font-weight: bold;
   color: #000;
 }
+
+.card-wrong{
+  background-color: #ea4336;
+  color: #fff;
+}
+
+.card-right{
+  background-color: #33a851;
+  color: #fff;
+}

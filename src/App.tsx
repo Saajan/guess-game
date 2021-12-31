@@ -50,7 +50,8 @@ const Matrix = ({ randomArray, guess, setGuess }: MatrixProps) => {
     <div className="cardContainer">
       {randomArray.map((item: number, index: number) => {
         if (flipped.includes(item as never)) {
-          return <div className="card" key={index}>{item}</div>
+          console.log(item, guess);
+          return <div className={item === guess ? 'card card-right' : 'card card-wrong'} key={index}>{item}</div>
         } else {
           return <div className="card" key={index} onClick={() => onFlipHandle(item)}></div>
         }
